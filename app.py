@@ -20,7 +20,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-@.route("/")
+@appobj.route("/")
 def hello():
     appobj.logger.info("Homepage accessed")
     return "updated Flask sample application on azure hghapp service updated version-6"
